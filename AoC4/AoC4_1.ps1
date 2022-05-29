@@ -18,12 +18,12 @@ for([int]$i = 1; $i -lt $fileContent.Length; $i++) {
     }
 }
 
-$splittetBingoBoardNumbers = $bingoBoardNumbers.Split(' ')
+$splitBingoBoardNumbers = $bingoBoardNumbers.Split(' ')
 
 
-for([int]$i = 0; $i -lt $splittetBingoBoardNumbers.Length; $i++) {
-    if($splittetBingoBoardNumbers[$i].Length) {
-        $cleanNumbers.Add($splittetBingoBoardNumbers[$i])
+for([int]$i = 0; $i -lt $splitBingoBoardNumbers.Length; $i++) {
+    if($splitBingoBoardNumbers[$i].Length) {
+        $cleanNumbers.Add($splitBingoBoardNumbers[$i])
     }
 }
 
