@@ -4,8 +4,7 @@
     Status:    Solved!
 #>
 
-$filePath = 'C:\Users\Tobias\Documents\AdventOfCode\PowerShell\AoC3\AoC3.txt'
-$fileContent = Get-Content -Path $filePath
+$fileContent = Get-Content -Path "$PSScriptRoot\Puzzle_Input"
 
 
 Function Get-OxygenGeneratorRating {
