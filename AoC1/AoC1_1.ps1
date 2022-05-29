@@ -2,16 +2,17 @@
     Title:     Advent of Code
     Challenge: Day 1 Part 1 
     Status:    Solved!
+    Solution:  1832
 #>
 
-$numbers = Get-Content -Path "C:\Users\Tobias\Documents\numbers.txt"
+$fileContent = Get-Content -Path "$PSScriptRoot\Challenge_Part_1_Data.txt";
 [int]$counter = 0;
 
-for ( $i = 1; $i -lt $numbers.Length; $i++ ) {
+for ( $i = 1; $i -lt $fileContent.Length; $i++ ) {
     
 
-    $tmp_a = $numbers[$i]
-    $tmp_b = $numbers[$i-1]
+    $tmp_a = $fileContent[$i];
+    $tmp_b = $fileContent[$i-1];
 
 
     if ( $tmp_a -gt $tmp_b ) {
@@ -19,4 +20,4 @@ for ( $i = 1; $i -lt $numbers.Length; $i++ ) {
     }
 }
 
-$counter;
+"Number of increasements: {0}" -f $counter;
