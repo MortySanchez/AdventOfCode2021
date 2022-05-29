@@ -5,7 +5,7 @@
     Solution:  1858
 #>
 
-$fileContent = Get-Content -Path "$PSScriptRoot\Challenge_Part_1_Data.txt";
+$fileContent = Get-Content -Path "$PSScriptRoot\Puzzle_Input.txt";
 
 
 [int]$increasements = 0;
