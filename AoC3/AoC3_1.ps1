@@ -4,15 +4,14 @@
     Status:    Solved!
 #>
 
-$path = 'C:\Users\Tobias\Documents\AdventOfCode\PowerShell\AoC3\AoC3.txt'
-$content = Get-Content -Path $path
+$fileContent = Get-Content -Path "$PSScriptRoot\Puzzle_Input.txt"
 
 [string]$gamma_rate = '';
 [string]$epsilon_rate = '';
 
-for ([int]$i = 0; $i -lt $content[0].Length; $i++) {
-    for ([int]$j = 0; $j -lt $content.Length; $j++) {
-        if ($content[$j][$i] -eq '1') {
+for ([int]$i = 0; $i -lt $fileContent[0].Length; $i++) {
+    for ([int]$j = 0; $j -lt $fileContent.Length; $j++) {
+        if ($fileContent[$j][$i] -eq '1') {
             $sum++;
         }
     }
