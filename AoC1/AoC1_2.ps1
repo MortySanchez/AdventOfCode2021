@@ -37,8 +37,8 @@ for ( [int]$i = 0; $i -lt $fileContent.Length; $i++ ) {
             "{0} -lt {1}" -f $sum_B, $sum_A;
         }
     }
-    Clear-Variable sum_A
-    Clear-Variable sum_B
+    Clear-Variable sum_A;
+    Clear-Variable sum_B;
 }
 
 "Increasements: {0}" -f $increasements;
